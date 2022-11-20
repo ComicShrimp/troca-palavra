@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "troca-palavra"
+version = "0.1.0"
+description = ""
+authors = ["Mário Victor Ribeiro Silva <mariovictorrs@gmail.com>"]
+readme = "README.md"
+packages = [{include = "troca_palavra"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^5.0.4"
+mypy = "^0.991"
+pylint = "^2.15.6"
+bandit = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

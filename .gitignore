@@ -1,0 +1,13 @@
+# Shared
+.vscode
+.env
+
+# Python
+*.pyc
+.coverage*
+.cache
+.pytest_cache
+.mypy_cache
+__pycache__
+.idea
+.husky
