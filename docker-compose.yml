@@ -1,0 +1,30 @@
+version: "3.4"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/api.dockerfile
+    container_name: troca-palavra_api
+    restart: unless-stopped
+    ports:
+      - ${DOCKER_WEB_PORT-8000}:80
+    volumes:
+      - .:/app:z
+    depends_on:
+      - database
+    environment:
+      MODULE_NAME: troca_palavra.main
+
+  database:
+    image: postgres:13-alpine
+    container_name: database
+    restart: unless-stopped
+    ports:
+      - ${DATABASE_PORT:-5432}:${DATABASE_PORT:-5432}
+    volumes:
+      - ../troca_palavra-resources/database:/var/lib/postgresql/data:z
+      - ../troca_palavra-resources/database_backup:/home/database_backup:z
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-troca_palavra}
+      POSTGRES_USER: ${POSTGRES_USER:-admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-admin}
