@@ -2,7 +2,7 @@
   // Shared
   "editor.formatOnSave": true,
   // Python
-  "python.defaultInterpreterPath": "/home/mario/.cache/pypoetry/virtualenvs/troca-palavra-mi6IdYg_-py3.10/bin/python",
+  "python.defaultInterpreterPath": "/path_to_virtualenv/bin/python",
   "python.languageServer": "Pylance",
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "black",
@@ -10,11 +10,11 @@
     88 // Black default
   ],
   // Python Mypy
-  "python.linting.mypyPath": "/home/mario/.cache/pypoetry/virtualenvs/troca-palavra-mi6IdYg_-py3.10/bin/mypy",
+  "python.linting.mypyPath": "/path_to_virtualenv/bin/mypy",
   "python.linting.mypyEnabled": true,
   // Python Flake 8
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "/home/mario/.cache/pypoetry/virtualenvs/troca-palavra-mi6IdYg_-py3.10/bin/flake8",
+  "python.linting.flake8Path": "/path_to_virtualenv/bin/flake8",
   "python.linting.flake8CategorySeverity.W": "Warning",
   "python.linting.flake8CategorySeverity.F": "Error",
   "python.linting.flake8CategorySeverity.E": "Error",
