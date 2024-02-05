@@ -8,7 +8,7 @@ packages = [{include = "troca_palavra"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-fastapi = "^0.87.0"
+fastapi = "^0.109.1"
 pydantic = "^1.10.2"
 uvicorn = "^0.20.0"
 sqlalchemy = "^1.4.44"
